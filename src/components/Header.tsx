@@ -26,7 +26,7 @@ export default function Header() {
         </p>
       </div>
 
-      <div className="phone">
+      <div className="phone-header">
         <p className="phone-text">+375 99 999 99 99</p>
         <p className="phone-number">пн – пт: с 09:00 до 18:00</p>
         <p className="phone-number">сб – вс: с 10:00 до 16:00</p>

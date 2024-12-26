@@ -1,0 +1,368 @@
+.feedback-form {
+  /* form / desktop */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 36px;
+
+  position: absolute;
+  width: 1356px;
+  height: 428px;
+  left: 282px;
+  top: 1760px;
+}
+
+.interior {
+  /* photo */
+
+  width: 660px;
+  height: 428px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.form {
+  width: 661px;
+  height: 428px;
+
+  position: relative;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.questions {
+  /* questions */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  position: absolute;
+  width: 544px;
+  height: 120px;
+  left: 0px;
+  top: 0px;
+}
+
+.question-header {
+  /* Остались вопросы? */
+
+  width: 457px;
+  height: 62px;
+
+  /* Desktop/H2 */
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 130%;
+  /* or 62px */
+
+  /* Accent 2/700 */
+  color: #063536;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.question-subheader {
+  /* Заполните форму ниже, и наш специалист свяжется с вами в ближайшее время. */
+
+  width: 544px;
+  height: 50px;
+
+  /* Desktop/Body-2 */
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 140%;
+  /* or 25px */
+
+  /* Accent 2/700 */
+  color: #063536;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.form-inputs {
+  /* form */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  position: absolute;
+  width: 661px;
+  height: 200px;
+  left: 0px;
+  top: 144px;
+}
+
+.phone-container {
+  /* phone */
+
+  position: relative;
+  width: 661px;
+  height: 64px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.phone-label {
+  /* Телефон* */
+
+  position: absolute;
+  width: 87px;
+  height: 23px;
+  left: 0px;
+  top: 20px;
+
+  /* Desktop/H6 */
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 23px */
+
+  /* Accent 2/700 */
+  color: #063536;
+}
+
+.required {
+  color: rgba(233, 117, 80, 1);
+}
+
+.phone {
+  /* input / desktop */
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 24px;
+  gap: 16px;
+
+  position: absolute;
+  width: 428px;
+  height: 64px;
+  left: 232px;
+  top: 0px;
+
+  /* Accent 2/700 */
+  border: 1px solid #063536;
+}
+
+.phone::placeholder {
+  /* +375 (99) 999-99-99 */
+  height: 24px;
+
+  /* Text_Placeholder/Big */
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  /* identical to box height, or 133% */
+
+  /* Grey */
+  color: rgba(132, 132, 132, 0.6);
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+.comment-container {
+  /* comment */
+
+  position: relative;
+  width: 660px;
+  height: 120px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.comment-label {
+  /* Комментарий */
+
+  position: absolute;
+  width: 124px;
+  height: 23px;
+  left: 0px;
+  top: 20px;
+
+  /* Desktop/H6 */
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 23px */
+
+  /* Accent 2/700 */
+  color: #063536;
+}
+
+.comment {
+  /* Comment */
+  resize: none;
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px 24px;
+  gap: 16px;
+
+  position: absolute;
+  width: 428px;
+  height: 120px;
+  left: 232px;
+  top: 0px;
+
+  /* Accent 2/700 */
+  border: 1px solid #063536;
+}
+
+.comment::placeholder {
+  /* Text_Placeholder/Big */
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 24px;
+  justify-content: flex-start;
+  /* or 133% */
+  /* Grey */
+  color: rgba(132, 132, 132, 0.6);
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+.submit-button {
+  /* main button */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 19px 8px;
+  gap: 10px;
+  border: none;
+
+  position: absolute;
+  width: 231px;
+  height: 52px;
+  left: 429px;
+  top: 376px;
+
+  /* Accent/500 */
+  background: #e97550;
+}
+
+.submit-button-text {
+  /* Узнать стоимость */
+
+  width: 215px;
+
+  /* Desktop/Button - Large */
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+
+  text-align: center;
+
+  /* BG 1/100 */
+  color: #fbfdfd;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+.checkbox-container {
+  /* Frame 45 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+
+  position: absolute;
+  width: 384px;
+  height: 24px;
+  left: 0px;
+  top: 390px;
+}
+
+.checkbox {
+  /* checkbox */
+
+  width: 24px;
+  height: 24px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.checkbox-label {
+  width: 348px;
+  height: 22px;
+
+  /* Desktop/Body-3 */
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 160%;
+
+  color: #063536;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}

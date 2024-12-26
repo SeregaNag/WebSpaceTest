@@ -124,7 +124,7 @@
   flex-grow: 0;
 }
 
-.phone {
+.phone-header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
