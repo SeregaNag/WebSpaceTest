@@ -124,7 +124,7 @@
   flex-grow: 0;
 }
 
-.phone {
+.phone-header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -189,6 +189,7 @@
   top: 12px;
 
   border: 2px solid #e97550;
+  cursor: pointer;
   background-color: rgba(0, 0, 0, 0);
 }
 

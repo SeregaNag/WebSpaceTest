@@ -3,6 +3,7 @@ import "./page.css";
 import Header from "@/components/Header";
 import Info from "@/components/Info";
 import MapWidget from "@/components/MapWidget";
+import FeedbackForm from "@/components/FeedbackForm";
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
         <TextSlider />
         <Info />
         <MapWidget />
+        <FeedbackForm />
       </div>
     </div>
   );
