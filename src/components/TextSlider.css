@@ -71,12 +71,13 @@
 
   width: 231px;
   height: 52px;
-
+  border: none;
   background: #e97550;
 
   flex: none;
   order: 1;
   flex-grow: 0;
+  cursor: pointer;
 }
 .seo-button-text {
   width: 215px;

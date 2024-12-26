@@ -1,0 +1,386 @@
+.modaloverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Полупрозрачный черный фон */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-callback {
+  /* popup call back / desktop */
+
+  position: absolute;
+  width: 660px;
+  height: 754px;
+  left: calc(50% - 660px / 2);
+  top: 96px;
+
+  /* BG 1/100 */
+  background: #fbfdfd;
+}
+
+.modal-content {
+  /* call back */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 24px;
+
+  position: absolute;
+  width: 428px;
+  height: 508px;
+  left: 116px;
+  top: 214px;
+}
+
+.popimage {
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  width: 660px;
+  height: 198px;
+  left: 0px;
+  top: 0px;
+}
+
+.popup-info {
+  /* questions */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+  gap: 4px;
+
+  width: 428px;
+  height: 90px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.popup-header {
+  /* Обратный звонок */
+
+  width: 428px;
+  height: 42px;
+
+  /* Desktop/H4 */
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 130%;
+  /* identical to box height, or 42px */
+  text-align: center;
+
+  /* Accent 2/700 */
+  color: #063536;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.popup-text {
+  /* Заполните форму ниже, и наш специалист свяжется с вами в ближайшее время. */
+
+  width: 428px;
+  height: 44px;
+
+  /* Desktop/Body-3 */
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+  text-align: center;
+
+  /* Accent 2/700 */
+  color: #063536;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.popup-inputs {
+  /* Frame 51 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  width: 428px;
+  height: 270px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.popup-phone-container {
+  /* phone */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+
+  width: 428px;
+  height: 99px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.popup-phone-label {
+  /* Телефон* */
+
+  width: 87px;
+  height: 23px;
+
+  /* Desktop/H6 */
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 23px */
+
+  /* Accent 2/700 */
+  color: #063536;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.popup-phone {
+  /* input / desktop */
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 24px;
+  gap: 16px;
+
+  width: 428px;
+  height: 64px;
+
+  /* Accent 2/700 */
+  border: 1px solid #063536;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.popup-comment-container {
+  /* comment */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+
+  width: 428px;
+  height: 155px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.popup-comment-label {
+  /* Комментарий */
+
+  width: 124px;
+  height: 23px;
+
+  /* Desktop/H6 */
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 23px */
+
+  /* Accent 2/700 */
+  color: #063536;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.popup-comment {
+  /* Comment */
+
+  box-sizing: border-box;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 24px;
+  gap: 16px;
+
+  width: 428px;
+  height: 120px;
+
+  /* Accent 2/700 */
+  border: 1px solid #063536;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.popup-checkbox-container {
+  /* personal data */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+
+  width: 384px;
+  height: 24px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 2;
+  flex-grow: 0;
+}
+
+.popup-checkbox {
+  /* checkbox */
+
+  width: 24px;
+  height: 24px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.popup-checkbox-label {
+  /* Согласие на обработку персональных данных */
+
+  width: 348px;
+  height: 22px;
+
+  /* Desktop/Body-3 */
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+  /* Accent 2/700 */
+  color: #063536;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.popup-button {
+  /* main button */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 19px 8px;
+  gap: 10px;
+
+  width: 231px;
+  height: 52px;
+
+  /* Accent/500 */
+  background: #e97550;
+  border: none;
+  cursor: pointer;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 3;
+  flex-grow: 0;
+}
+
+.popup-button-text {
+  width: 215px;
+
+  /* Desktop/Button - Large */
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+
+  text-align: center;
+
+  /* BG 1/100 */
+  color: #fbfdfd;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+.popup-close {
+  /* close */
+
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  left: 606px;
+  top: 16px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
