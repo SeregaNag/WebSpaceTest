@@ -3,6 +3,7 @@
 import Image from "next/image";
 import "./TextSlider.css";
 import { useState } from "react";
+import Modal from "./Modal";
 
 const sliderHeader = [
   "Создадим ваш идеальный дом в установленные сроки и с 10-летней гарантией",
@@ -18,7 +19,10 @@ const sliderText = [
 
 export default function TextSlider() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  // сделать 3 кнопки которые будут указывать на индексы слайдов
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
   return (
     <>
       <div className="seo">
@@ -26,8 +30,9 @@ export default function TextSlider() {
           <p className="seo-header">{sliderHeader[currentSlide]}</p>
           <p className="seo-subheader">{sliderText[currentSlide]}</p>
         </div>
-        <button className="seo-button">
+        <button className="seo-button" onClick={openModal}>
           <span className="seo-button-text">Узнать стоимость</span>
+          <Modal isOpen={isModalOpen} onClose={closeModal} />
         </button>
       </div>
 

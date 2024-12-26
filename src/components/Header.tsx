@@ -1,7 +1,15 @@
+"use client";
+
 import Image from "next/image";
 import "./Header.css";
+import { useState } from "react";
+import Modal from "./Modal";
 
 export default function Header() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const openModal = () => setIsModalOpen(true);
+  const closeModal = () => setIsModalOpen(false);
   return (
     <div className="header">
       <div className="logo">
@@ -33,7 +41,10 @@ export default function Header() {
       </div>
 
       <button className="button-call">
-        <span className="button-call-text">Заказать звонок</span>
+        <span className="button-call-text" onClick={openModal}>
+          Заказать звонок
+        </span>
+        <Modal isOpen={isModalOpen} onClose={closeModal}></Modal>
       </button>
     </div>
   );
