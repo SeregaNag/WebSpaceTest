@@ -1,0 +1,19 @@
+.desktop {
+  position: relative;
+  width: 1920px;
+  height: 2597px;
+
+  background: #fbfdfd;
+
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.hero {
+  position: absolute;
+  width: 1920px;
+  height: 1000px;
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../../public/background.png);
+}
