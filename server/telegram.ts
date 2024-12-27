@@ -3,7 +3,7 @@ import dotenv from "dotenv";
 
 dotenv.config();
 
-const TELEGRAM_BOT_TOKEN = "7394318258:AAHYPDOvPkT9Dicwbh3J6ciUcsqlIg_fwj4"; // не должно тут быть
+const TELEGRAM_BOT_TOKEN = process.env.NEXT_PUBLIC_TELEGRAM_BOT_TOKEN!;
 const TELEGRAM_CHAT_ID = "317808819"; // ID чата (или группы)
 
 export const sendTelegramMessage = async (phone: string, comment: string) => {
@@ -13,7 +13,10 @@ export const sendTelegramMessage = async (phone: string, comment: string) => {
   Комментарий: ${comment}
   `;
 
-  console.log("TELEGRAM_BOT_TOKEN:", process.env.TELEGRAM_BOT_TOKEN1!);
+  console.log(
+    "TELEGRAM_BOT_TOKEN:",
+    process.env.NEXT_PUBLIC_TELEGRAM_BOT_TOKEN!
+  );
   try {
     const response = await fetch(
       `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`,
