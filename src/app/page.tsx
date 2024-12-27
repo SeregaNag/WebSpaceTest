@@ -4,6 +4,7 @@ import Header from "@/components/Header";
 import Info from "@/components/Info";
 import MapWidget from "@/components/MapWidget";
 import FeedbackForm from "@/components/FeedbackForm";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <Info />
         <MapWidget />
         <FeedbackForm />
+        <Footer />
       </div>
     </div>
   );
