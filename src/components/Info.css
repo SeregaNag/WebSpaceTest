@@ -1,0 +1,220 @@
+.info {
+  /* Frame 34 */
+
+  position: absolute;
+  width: 544px;
+  height: 544px;
+  left: 1096px;
+  top: 261px;
+}
+
+.first-block {
+  /* 1 */
+
+  position: absolute;
+  width: 272px;
+  height: 272px;
+  left: 0px;
+  top: 0px;
+
+  /* Accent 2/600 */
+  background: #114142;
+}
+
+.first-block-text {
+  /* Оформление рассрочки по ставке от 15% годовых */
+
+  position: absolute;
+  width: 224px;
+  height: 87px;
+  left: 24px;
+  top: 24px;
+
+  /* Desktop/H5 */
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 130%;
+  /* or 29px */
+
+  /* BG 1/100 */
+  color: #fbfdfd;
+}
+
+.first-block-button {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+
+  position: absolute;
+  width: 122px;
+  height: 24px;
+  left: calc(50% - 122px / 2 - 51px);
+  top: 224px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.first-block-button-text {
+  width: 94px;
+
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+
+  color: #fbfdfd;
+
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.second-block {
+  position: absolute;
+  width: 272px;
+  height: 272px;
+  left: 272px;
+  top: 0px;
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url(/second-block.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.second-block-text {
+  /* Барнхаусы */
+
+  position: absolute;
+  width: 117px;
+  height: 29px;
+  left: 24px;
+  top: 24px;
+
+  /* Desktop/H5 */
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 130%;
+  /* identical to box height, or 29px */
+
+  /* BG 1/100 */
+  color: #fbfdfd;
+}
+
+.third-block {
+  /* image */
+
+  position: absolute;
+  width: 272px;
+  height: 272px;
+  left: 0px;
+  top: 272px;
+
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)),
+    url(/third-block.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.third-block-text {
+  /* Таунхаусы */
+
+  position: absolute;
+  width: 112px;
+  height: 29px;
+  left: 24px;
+  top: 24px;
+
+  /* Desktop/H5 */
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 130%;
+  /* identical to box height, or 29px */
+
+  /* BG 1/100 */
+  color: #fbfdfd;
+}
+
+.fourth-block {
+  /* 4 */
+
+  position: absolute;
+  width: 272px;
+  height: 272px;
+  left: 272px;
+  top: 272px;
+
+  /* Accent 2/600 */
+  background: #114142;
+}
+
+.fourth-block-text {
+  /* Скидка до 5% при полной предоплате за проект */
+
+  position: absolute;
+  width: 224px;
+  height: 87px;
+  left: 24px;
+  top: 24px;
+
+  /* Desktop/H5 */
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 22px;
+  line-height: 130%;
+  /* or 29px */
+
+  /* BG 1/100 */
+  color: #fbfdfd;
+}
+
+.fourth-block-button {
+  /* link button */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+
+  position: absolute;
+  width: 122px;
+  height: 24px;
+  left: calc(50% - 122px / 2 - 51px);
+  top: 224px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.fourth-block-button-text {
+  /* Подробнее */
+
+  width: 94px;
+  height: 20px;
+
+  /* Button -Medium */
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 20px;
+  /* identical to box height, or 111% */
+
+  /* BG 1/100 */
+  color: #fbfdfd;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}

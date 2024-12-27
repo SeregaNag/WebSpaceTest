@@ -1,0 +1,117 @@
+.seo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 32px;
+
+  position: absolute;
+  width: 747px;
+  height: 551px;
+  left: 284px;
+  top: 261px;
+}
+
+.seo-text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  width: 747px;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.seo-header {
+  width: 747px;
+
+  font-family: "involveregular";
+  font-style: normal;
+  font-size: 64px;
+  line-height: 130%;
+
+  color: #fbfdfd;
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.seo-subheader {
+  width: 747px;
+  height: 36px;
+
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 140%;
+
+  color: #fbfdfd;
+
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.seo-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 19px 8px;
+  gap: 10px;
+
+  width: 231px;
+  height: 52px;
+  border: none;
+  background: #e97550;
+
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  cursor: pointer;
+}
+.seo-button-text {
+  width: 215px;
+
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+
+  color: #fbfdfd;
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+
+  position: absolute;
+  width: 64px;
+  height: 8px;
+  left: calc(50% - 64px / 2);
+  top: 928px;
+}
+
+.pagination-button {
+  background: none;
+  border: none; /* убрать рамку */
+  cursor: pointer; /* указатель при наведении */
+  outline: none;
+}
