@@ -1,6 +1,4 @@
-"use client";
-
-import React, { ReactNode, useEffect, useState } from "react";
+import React, { ReactNode, useEffect } from "react";
 import ReactDOM from "react-dom";
 import "./Modal.css";
 import Image from "next/image";
@@ -11,38 +9,6 @@ type ModalProps = {
 };
 
 const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
-  const [phone, setPhone] = useState("");
-  const [comment, setComment] = useState("");
-  const [status, setStatus] = useState<
-    "idle" | "loading" | "success" | "error"
-  >("idle");
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setStatus("loading");
-    console.log("TELEGRAM_BOT_TOKEN:", process.env.TELEGRAM_BOT_TOKEN);
-
-    try {
-      const response = await fetch("/api/feedback", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ phone, comment }),
-      });
-
-      if (!response.ok) throw new Error("Ошибка при отправке данных");
-
-      setStatus("success");
-      setPhone("");
-      setComment("");
-      onClose();
-    } catch (error) {
-      console.error(error);
-      setStatus("error");
-    }
-  };
-
   // Создаем контейнер для портала
   const modalRoot =
     typeof window !== "undefined"
@@ -75,7 +41,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
           height={198}
           className="popimage"
         />
-        <form className="modal-content" onSubmit={handleSubmit}>
+        <form className="modal-content">
           <div className="popup-info">
             <div className="popup-header">Обратный звонок</div>
             <div className="popup-text">
@@ -93,8 +59,6 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
                 className="popup-phone"
                 placeholder="+375 (99) 999 99 99"
                 required
-                value={phone}
-                onChange={(e) => setPhone(e.target.value)}
               ></input>
             </div>
             <div className="popup-comment-container">
@@ -102,8 +66,6 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
                 Комментарий
               </label>
               <textarea
-                value={comment}
-                onChange={(e) => setComment(e.target.value)}
                 className="popup-comment"
                 placeholder=" Ваш комментарий"
               ></textarea>
@@ -115,11 +77,7 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
               Согласие на обработку персональных данных
             </label>
           </div>
-          <button
-            className="popup-button"
-            type="submit"
-            disabled={status === "loading"}
-          >
+          <button className="popup-button">
             <span className="popup-button-text">Отправить</span>
           </button>
         </form>
@@ -132,8 +90,6 @@ const Modal: React.FC<ModalProps> = ({ isOpen, onClose }) => {
           ></Image>
         </button>
       </div>
-      {status === "success" && <p>Сообщение успешно отправлено!</p>}
-      {status === "error" && <p>Ошибка отправки. Попробуйте снова.</p>}
     </div>,
     modalRoot
   );
