@@ -1,0 +1,311 @@
+.footer {
+  /* footer / desktop */
+
+  position: absolute;
+  width: 1920px;
+  height: 269px;
+  left: 0px;
+  top: 2328px;
+
+  /* Accent 2/600 */
+  background: #114142;
+}
+
+.footer-content {
+  /* content */
+
+  position: absolute;
+  width: 1356px;
+  height: 141px;
+  left: 282px;
+  top: 64px;
+}
+
+.footer-content-container {
+  position: relative;
+}
+
+.footer-logo {
+  /* logo */
+
+  position: absolute;
+  width: 260px;
+  height: 64px;
+  left: 0px;
+  top: 0px;
+}
+
+.footer-logo-image {
+  /* house-svgrepo-com (1) 1 */
+
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  left: 0px;
+  top: 0px;
+}
+
+.footer-logo-text {
+  /* text */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 2px;
+
+  position: absolute;
+  width: 192px;
+  height: 40px;
+  left: 68px;
+  top: 20px;
+}
+
+.footer-logo-big-text {
+  /* Строительные решения */
+
+  width: 192px;
+  height: 21px;
+
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  /* identical to box height, or 21px */
+
+  /* BG 1/100 */
+  color: #fbfdfd;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.footer-logo-small-text {
+  /* строительная компания */
+
+  width: 192px;
+  height: 17px;
+
+  /* Desktop/Body-5 */
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  /* identical to box height, or 17px */
+
+  /* BG 1/100 */
+  color: #fbfdfd;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.footer-address {
+  /* address */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 8px;
+
+  position: absolute;
+  width: 182px;
+  height: 139px;
+  left: 464px;
+  top: 0px;
+}
+
+.footer-address-container {
+  /* Frame 49 */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 16px;
+
+  width: 182px;
+  height: 83px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.footer-address-text {
+  /* Адрес офиса */
+
+  width: 118px;
+  height: 23px;
+
+  /* Desktop/H6 */
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 23px */
+
+  /* BG 1/100 */
+  color: #fbfdfd;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.footer-address-address {
+  /* РБ, г. Минск, ул. Ленина, 1 */
+
+  width: 182px;
+  height: 44px;
+
+  /* Desktop/Body-3 */
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+  /* BG 1/50 */
+  color: rgba(251, 253, 253, 0.6);
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  align-self: stretch;
+  flex-grow: 0;
+}
+
+.footer-time {
+  /* time */
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 4px;
+
+  width: 182px;
+  height: 48px;
+
+  /* Inside auto layout */
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+}
+
+.footer-time-text {
+  /* пн – пт: с 09:00 до 18:00 */
+
+  width: 182px;
+  height: 22px;
+
+  /* Desktop/Body-3 */
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+  /* BG 1/50 */
+  color: rgba(251, 253, 253, 0.6);
+
+  /* Inside auto layout */
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.eur-face-text {
+  /* ООО “Строительные решения”Юридический адрес: РБ, г. Минск, ул. Ленина, 1УНП: 111111111 */
+
+  position: absolute;
+  width: 266px;
+  height: 88px;
+  left: 812px;
+  top: 0px;
+
+  /* Desktop/Body-3 */
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+  /* BG 1/50 */
+  color: rgba(251, 253, 253, 0.6);
+}
+
+.footer-link {
+  position: absolute;
+  width: 266px;
+  height: 23px;
+  left: 812px;
+  top: 116px;
+  /* Desktop/Body-3 */
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22.4px;
+  color: rgba(251, 253, 253, 0.6);
+  white-space: nowrap;
+  /* or 23px */
+}
+
+.footer-link-body {
+  height: 23px;
+  text-decoration: none;
+
+  /* Desktop/Body-3 */
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  /* or 23px */
+
+  /* Accent/500 */
+  color: #e97550;
+}
+
+.build-solution {
+  /* © 2024 ООО “Строительные решения” */
+
+  position: absolute;
+  width: 290px;
+  height: 22px;
+  left: 0px;
+  top: 80px;
+
+  /* Desktop/Body-3 */
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  /* or 22px */
+
+  /* BG 1/100 */
+  color: #fbfdfd;
+}
