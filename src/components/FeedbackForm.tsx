@@ -1,7 +1,32 @@
+"use client";
+
 import "./FeedbackForm.css";
 import Image from "next/image";
+import { useState } from "react";
 
 export default function FeedbackForm() {
+  const [phone, setPhone] = useState("");
+  const [comment, setComment] = useState("");
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    console.log("TELEGRAM_BOT_TOKEN:", process.env.TELEGRAM_BOT_TOKEN);
+
+    try {
+      const response = await fetch("/api/feedback", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ phone, comment }),
+      });
+
+      if (!response.ok) throw new Error("Ошибка при отправке данных");
+      setPhone("");
+      setComment("");
+    } catch (error) {
+      console.error(error);
+    }
+  };
   return (
     <div className="feedback-form">
       <Image
@@ -11,7 +36,7 @@ export default function FeedbackForm() {
         height={428}
         className="interior"
       ></Image>
-      <form className="form">
+      <form className="form" onSubmit={handleSubmit}>
         <div className="questions">
           <span className="question-header">Остались вопросы?</span>
           <span className="question-subheader">
@@ -26,9 +51,11 @@ export default function FeedbackForm() {
             </label>
             <input
               type="tel"
+              value={phone}
               className="phone"
               placeholder="+375 (99) 999 99 99"
               required
+              onChange={(e) => setPhone(e.target.value)}
             ></input>
           </div>
           <div className="comment-container">
@@ -37,7 +64,9 @@ export default function FeedbackForm() {
             </label>
             <textarea
               className="comment"
+              value={comment}
               placeholder="Ваш комментарий"
+              onChange={(e) => setComment(e.target.value)}
             ></textarea>
           </div>
         </div>
@@ -47,7 +76,7 @@ export default function FeedbackForm() {
             Согласие на обработку персональных данных
           </label>
         </div>
-        <button className="submit-button">
+        <button className="submit-button" type="submit">
           <span className="submit-button-text">Отправить</span>
         </button>
       </form>
