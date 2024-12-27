@@ -1,4 +1,7 @@
 import fetch from "node-fetch";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const TELEGRAM_BOT_TOKEN = ""; // не должно тут быть
 const TELEGRAM_CHAT_ID = "317808819"; // ID чата (или группы)
@@ -10,6 +13,7 @@ export const sendTelegramMessage = async (phone: string, comment: string) => {
   Комментарий: ${comment}
   `;
 
+  console.log("TELEGRAM_BOT_TOKEN:", process.env.TELEGRAM_BOT_TOKEN1!);
   try {
     const response = await fetch(
       `https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage`,

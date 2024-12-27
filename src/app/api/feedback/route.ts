@@ -12,7 +12,6 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Отправляем сообщение в Telegram
     await sendTelegramMessage(phone, comment);
 
     return NextResponse.json({ success: true });
